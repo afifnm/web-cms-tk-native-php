@@ -1,0 +1,16 @@
+RewriteEngine on
+ErrorDocument 404 /404.php
+php_value allow_url_fopen 1
+php_value allow_url_include 1
+php_flag zlib.output_compression 0
+RewriteBase /tk/
+RewriteRule ^notfound$ 404.php
+RewriteRule ^informasi-([0-9]+)\.html$ berita.php?id=$1
+RewriteRule ^albumfoto-([0-9]+)\.html$ albumfoto.php?folder=$1
+RewriteRule ^index.html$ index.php
+RewriteRule ^tentangkami$ about.php
+RewriteRule ^form-pendaftaran$ pendaftaran.php
+RewriteRule ^buku-tamu$ bukutamu.php
+RewriteRule ^lokasi-kami$ denah.php
+
+Options All -Indexes
