@@ -1,1 +1,1 @@
-# project_magang_webtk
+# Web Taman Kanak-Kanak CMS (Native PHP)
